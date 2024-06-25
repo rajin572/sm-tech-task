@@ -5,7 +5,7 @@ const PostPropertyCTA = () => {
   return (
     <div className="bg-[#FDECE2] rounded-md flex flex-col lg:flex-row items-center justify-between gap-4 mt-12 -mb-12">
       <Container>
-        <div className="w-full bg-[#FDF0E7]">
+        <div className="w-full bg-[#FDF0E7] py-12">
           <div className="max-w-[1440px] mx-auto flex flex-col md:flex-row items-center justify-between gap-[64px]">
             <div className="w-full md:w-[784px]">
               <h2 className="font-montserrat text-[20px] font-semibold leading-[30px] text-center md:text-left text-[#101828]">
@@ -16,7 +16,9 @@ const PostPropertyCTA = () => {
               </p>
             </div>
             <div>
-              <Button></Button>
+              <Button className="py-4 px-7 bg-[#F06224] hover:bg-[#F06224] hover:text-white text-white">
+                Post Property
+              </Button>
             </div>
           </div>
         </div>

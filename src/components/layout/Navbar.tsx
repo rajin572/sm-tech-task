@@ -5,7 +5,7 @@ import logo from "../../assets/images/logo.png";
 
 const NavItems = [
   { id: "1", name: "Buy", route: "/buyScreen" },
-  { id: "2", name: "Sell", route: "/about" },
+  { id: "2", name: "Sell", route: "/propertyDetails" },
   { id: "2", name: "Services", route: "/about" },
 ];
 
