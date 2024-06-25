@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import Home from "../pages/Home";
 import About from "../pages/About";
+import BuyScreen from "../pages/BuyScreen";
 
 const routes = [
   {
@@ -15,6 +16,10 @@ const routes = [
       {
         path: "/about",
         element: <About />,
+      },
+      {
+        path: "/buyScreen",
+        element: <BuyScreen />,
       },
     ],
   },

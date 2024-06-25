@@ -7,6 +7,29 @@ body {
   font-family: "Inter", cursive;
 }
 
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  color: #ffffff;
+  padding: 8px 12px;
+  font-size: 1.2rem !important;
+  background-color: #5490cb;
+  border-radius: 100%;
+  z-index: 100;
+}
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  color: #ffffff;
+  padding: 8px 12px;
+  font-size: 1rem !important;
+  background-color: #5490cb;
+  border-radius: 100%;
+  z-index: 100;
+}
+
+.swiper-pagination-bullet {
+  background-color: #ee6611 !important;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
