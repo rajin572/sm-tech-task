@@ -6,7 +6,7 @@ import logo from "../../assets/images/logo.png";
 const NavItems = [
   { id: "1", name: "Buy", route: "/buyScreen" },
   { id: "2", name: "Sell", route: "/propertyDetails" },
-  { id: "3", name: "Services", route: "/about" },
+  { id: "3", name: "About", route: "/about" },
 ];
 
 const Navbar = () => {

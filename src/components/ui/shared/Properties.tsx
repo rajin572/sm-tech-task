@@ -10,6 +10,7 @@ import "swiper/css/navigation";
 // import required modules
 import { Navigation } from "swiper/modules";
 import Container from "../Container";
+import { Link } from "react-router-dom";
 
 const properties = [
   {
@@ -62,9 +63,11 @@ const Properties = ({ title = "" }: { title: string }) => {
           <h1 className="text-3xl text-[#111827] font-semibold mb-3 sm:mb-0">
             {title}
           </h1>
-          <p className="text-[#0059B1] font-semibold text-lg underline cursor-pointer">
-            See all propeety
-          </p>
+          <Link to="/buyScreen">
+            <p className="text-[#0059B1] font-semibold text-lg underline cursor-pointer cursor-pointer">
+              See all propeety
+            </p>
+          </Link>
         </div>
         <Swiper
           slidesPerView={1}
