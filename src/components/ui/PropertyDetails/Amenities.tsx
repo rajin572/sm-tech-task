@@ -56,7 +56,7 @@ const amenitiesList = [
 const Amenities = () => {
   return (
     <Container>
-      <div className="p-6 bg-[#F9FAFB] rounded border border-[#F9FAFB] shadow-lg">
+      <div className="p-6 bg-[#F9FAFB] rounded border border-[#F9FAFB] shadow">
         <h2 className="text-2xl font-semibold mb-8">Amenities</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-6">
           {amenitiesList.map((amenity, index) => (

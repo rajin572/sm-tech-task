@@ -71,7 +71,7 @@ const PropertySection = () => {
                 alt="player"
                 className={`absolute top-[150px] left-[20px] sm:top-[45%] sm:left-[90%]  md:top-[45%] md:left-[90%]  lg:top-[150px] lg:left-[320px] xl:left-[422px] xl:top-[228px] xl:w-[72px] h-[72px] ${
                   property.id === 2
-                    ? ` lg:left-[5%] lg:top-[-5%] xl:left-[10%] xl:top-[-10%]`
+                    ? ` lg:left-[5%] lg:top-[-5%] xl:left-[11%] xl:top-[-7%]`
                     : ""
                 }`}
               />

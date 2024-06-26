@@ -7,8 +7,11 @@ import bed from "../../../assets/icons/bed.png";
 import bathtub from "../../../assets/icons/bathtub.png";
 import balcony from "../../../assets/icons/balcony.png";
 import shelves from "../../../assets/icons/shelves.png";
+import map from "../../../assets/images/Map icon.png";
 
 import Container from "../Container";
+import MultiRangeSlider from "../MultiRangeSlider";
+
 const PropertyDetailsAll = () => {
   return (
     <div className="my-11">
@@ -29,6 +32,7 @@ const PropertyDetailsAll = () => {
           </div>
         </div>
         <div className="grid lg:grid-cols-3  gap-4 ">
+          {/* //*Image and Overview */}
           <div className="col-span-2">
             {/* //*Image Section */}
             <div>
@@ -44,109 +48,122 @@ const PropertyDetailsAll = () => {
                   alt="image1"
                   className="max-w-[70px] max-h-[40px] sm:max-w-[100px] sm:max-h-[80px]  md:max-w-[150px] md:max-h-[120px] xl:max-w-[200px] xl:max-h-[150px] max-auto"
                 />
-                <img
-                  src={image4}
-                  alt="image1"
-                  className="max-w-[70px] h-[40px] sm:max-w-[100px] sm:h-[80px]  md:max-w-[150px] md:h-[90px] xl:max-w-[200px] xl:h-[110px] max-auto"
-                />
+                <div className="relative">
+                  <img
+                    src={image4}
+                    alt="image1"
+                    className="max-w-[70px] h-[40px] sm:max-w-[100px] sm:h-[80px] md:max-w-[150px] md:h-[90px] xl:max-w-[200px] xl:h-[110px] max-auto"
+                  />
+                  <div className="absolute inset-0 flex items-center justify-center text-white">
+                    View more
+                  </div>
+                </div>
               </div>
             </div>
             {/* //*Overview */}
             <div className="my-8 px-4 lg:px-12 bg-[#F9FAFB] border border-[#E5E7EB] rounded py-8">
               <h1 className="text-2xl font-semibold">Overview</h1>
-              <div className="grid w-full items-center grid-cols-1 md:grid-cols-2 xl:grid-cols-4 border shadow-lg pt-4 rounded my-6">
+              <div className="grid w-full items-center grid-cols-1 md:grid-cols-2 xl:grid-cols-4 border shadow-lg pt-4 px-4 rounded my-6">
                 <p className="font-bold flex items-center mb-5">
                   <img src={bed} className="size-6" alt="" />
-                  <span>2 Beds</span>
+                  <span className="text-[#303030] font-bold">2 Beds</span>
                 </p>
                 <p className="font-bold flex items-center mb-5">
                   <img src={bathtub} className="size-6" alt="" />
-                  <span>2 Bath</span>
+                  <span className="text-[#303030] font-bold">2 Bath</span>
                 </p>
                 <p className="font-bold flex items-center mb-5">
                   <img src={balcony} className="size-6" alt="" />
-                  <span>2 Balcony</span>
+                  <span className="text-[#303030] font-bold">2 Balcony</span>
                 </p>
                 <p className="font-bold flex items-center mb-5">
                   <img src={shelves} className="size-6" alt="" />
-                  <span>Fully Furnished</span>
+                  <span className="text-[#303030] font-bold">
+                    Fully Furnished
+                  </span>
                 </p>
               </div>
               <div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mb-5">
                   <div>
-                    <p className="text-sm text-gray-400">Carpet Area</p>
-                    <h1>2000 sqft</h1>
-                    <p className="text-sm text-gray-400">$ 225/sqft</p>
+                    <p className="text-sm text-[#5C5C5C]">Carpet Area</p>
+                    <h1 className="text-[#101010]">2000 sqft</h1>
+                    <p className="text-sm text-[#535353]">$ 225/sqft</p>
                   </div>
                   <div>
-                    <p className="text-sm text-gray-400">Floor</p>
-                    <h1>Second (Out of 6th floor)</h1>
+                    <p className="text-sm text-[#5C5C5C]">Floor</p>
+                    <h1 className="text-[#101010]">
+                      Second (Out of 6th floor)
+                    </h1>
                   </div>
                   <div>
-                    <p className="text-sm text-gray-400">Transaction Type</p>
-                    <h1>Ready to move</h1>
+                    <p className="text-sm text-[#5C5C5C]">Transaction Type</p>
+                    <h1 className="text-[#101010]">Ready to move</h1>
                   </div>
                   <div>
                     <p className="text-sm text-gray-400">Lift</p>
-                    <h1>1</h1>
+                    <h1 className="text-[#101010]">1</h1>
                   </div>
                 </div>
               </div>
               <div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4s">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                   <div>
-                    <p className="text-sm text-gray-400">Facing</p>
-                    <h1>North - East</h1>
+                    <p className="text-[#5C5C5C]">Facing</p>
+                    <h1 className="text-[#101010]">North - East</h1>
                   </div>
                   <div>
-                    <p className="text-sm text-gray-400">Additional Rooms</p>
-                    <h1>1 servant room & 1 gust room</h1>
+                    <p className="text-[#5C5C5C]">Additional Rooms</p>
+                    <h1 className="text-[#101010]">
+                      1 servant room & 1 gust room
+                    </h1>
                   </div>
                   <div>
-                    <p className="text-sm text-gray-400">Age of construction</p>
-                    <h1>New Construction</h1>
-                  </div>
-                  <div>
-                    <p></p>
-                    <h1></h1>
+                    <p className="text-[#5C5C5C]">Age of construction</p>
+                    <h1 className="text-[#101010]">New Construction</h1>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          {/* property value and map start */}
-          {/* <div className="lg:mt-14 mx-auto col-span-3 lg:col-span-1">
-            <div className="bg-blue-50 py-6 px-4 rounded">
-              <p className="text-sm text-gray-500">Property Value</p>
-              <h1 className="text-3xl font-bold my-4">$ 300k - $ 310k</h1>
-              <p className="text-sm text-gray-500">
+          {/* //*property value and map start */}
+          <div className=" col-span-3 lg:col-span-1">
+            <div className="bg-[#ECF5FF] p-6">
+              <p className="font-normal text-[#6B7280]">Property Value</p>
+              <h1 className="text-[#252323] text-2xl font-bold mt-2 mb-4">
+                $ 300k - $ 310k
+              </h1>
+              <p className="font-medium text-[#6B7280] mb-8">
                 Your bid can not be than 10% of the property Minimum value.
               </p>
               <div>
-                <p className="text-sm">min</p>
-                <h1 className="px-2 py-3 bg-white w-3/4 ms-4">$ 280k</h1>
-                <p>max</p>
-                <h1 className="px-2 py-3 bg-white w-3/4 ms-4">$ 320k</h1>
+                <p className="text-sm text-[#252323] font-normal mb-1">Min</p>
+                <div className="px-4 py-3 bg-white mb-2">
+                  <span className="text-[#252323] font-normal">$ 280k</span>
+                </div>
+                <p className="text-sm text-[#252323] font-normal mb-1">Max</p>
+                <div className="px-4 py-3 bg-white">
+                  <span className="text-[#252323] font-normal">$ 320k</span>
+                </div>
               </div>
               <div className="mt-6">
-                <p>$280k</p>
-                <p>$320k</p>
+                <MultiRangeSlider
+                  min={280}
+                  max={305}
+                  minVal={280}
+                  maxVal={305}
+                />
               </div>
               <div className="text-center ">
-                <button className="px-6 py-3 bg-blue-500 rounded-md text-white btn">
+                <button className="px-6 py-3 bg-[#0059B1] rounded-md text-white btn">
                   Bid Property
                 </button>
               </div>
             </div>
             <div className="mt-6  ">
-              <img
-                className="w-full h-[354px] rounded"
-                src="https://s3-alpha-sig.figma.com/img/18e0/505f/0243f270b5bd3d4534df7043be08f139?Expires=1720396800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=VOWt1Nn-oElF73njyMx0VYvY6GCLO4B-~mgtbhrHKOgu05ArrhTnvKXm5tU8yos1wripbY9AySqYMz-LlPbExPNY1Os1fHIKiQnvSMx5oQDriCooNeuic9EKLDLf8EjXTuo9ZFSs5KEIYat~97DA~n-VrZ3svXUfoui9b4z0KOuDO~MVWZJk5IV44K3iSAF-fMAjcHYqW4J-O3LpcFJMpgErIAz-i9i5pU0ISPq0cqzP1tQasoJLlHZQVkanNImzCLSOddfte3SFAe-jJs7fLy8wLsrsCB59fbQA4UAfRucGhL6YeNE7u8y-6pNnLl6YY2TDc3qa2-64gm~DHd7r2g__"
-                alt=""
-              />
+              <img className="w-full h-[354px] rounded" src={map} alt="" />
             </div>
-          </div> */}
+          </div>
         </div>
       </Container>
     </div>

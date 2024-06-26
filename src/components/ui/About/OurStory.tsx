@@ -20,12 +20,12 @@ const OurStory = () => {
             <img
               src={ourStory}
               alt="Additional"
-              className="absolute  top-[60px] left-[40px] md:top-[61px] md:left-[120px] w-[100px] h-[105px] md:w-[252px] md:h-[235px] object-cover bg-[#00000033]"
+              className="absolute  top-[60px] left-[40px] md:top-[61px] md:left-[120px] w-[100px] h-[105px] lg:w-[252px] lg:h-[235px] object-cover bg-[#00000033] "
             />
           </div>
 
           {/* Card */}
-          <div className="absolute top-[313px] left-[50%] transform lg:left-[512px] -translate-x-1/2 lg:-translate-x-0 w-full md:w-[592px] bg-[#ECF5FF] p-[32px]">
+          <div className="absolute top-[313px] left-[50%] transform lg:left-[315px] xl:left-[612px] -translate-x-1/2 lg:-translate-x-0 w-full md:w-[592px] bg-[#ECF5FF] p-[32px]">
             <div className="flex items-center space-x-[16px] mb-[16px]">
               <div className="w-[51px] border-t-[4px] border-[#EE6611]"></div>
               <div className="text-[#EE6611] font-poppins text-[18px] font-semibold leading-[21.6px]">
@@ -41,21 +41,21 @@ const OurStory = () => {
             </div>
           </div>
         </div>
-        <div className="mx-auto w-full mt-[200px] mb-[230px]">
+        <div className="mt-80 mx-auto w-full sm:mt-[200px] mb-[230px]">
           <div className="relative">
             {/* Main Image */}
             <div className="relative w-full h-[455px] lg:w-[710px]">
               <img
                 src={missionStatement}
                 alt="Mission Statement"
-                className="absolute top-0 left-0 md:left-[400px] w-full h-full object-cover"
+                className="absolute top-0 left-0  lg:left-[200px] xl:left-[400px] w-full h-full object-cover"
               />
 
               {/* Inside Image */}
               <img
                 src={ourStory}
                 alt="Inside"
-                className="absolute top-[195px] left-[150px] md:left-[719px] w-[70.04px] h-[64px] object-cover"
+                className="absolute top-[195px] left-[150px] md:left-[400px] lg:left-[500px] xl:left-[719px] w-[70.04px] h-[64px] object-cover"
               />
 
               {/* Card */}
