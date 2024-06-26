@@ -63,7 +63,7 @@ const Properties = ({ title = "" }: { title: string }) => {
           <h1 className="text-3xl text-[#111827] font-semibold mb-3 sm:mb-0">
             {title}
           </h1>
-          <Link to="/buyScreen">
+          <Link to="/propertyDetails">
             <p className="text-[#0059B1] font-semibold text-lg underline cursor-pointer cursor-pointer">
               See all propeety
             </p>
