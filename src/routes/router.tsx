@@ -4,6 +4,8 @@ import Home from "../pages/Home";
 import About from "../pages/About";
 import BuyScreen from "../pages/BuyScreen";
 import PropertyDetails from "../pages/PropertyDetails";
+import SignIn from "../pages/SignIn";
+import AllProperties from "../pages/AllProperties";
 
 const routes = [
   {
@@ -25,6 +27,14 @@ const routes = [
       {
         path: "/propertyDetails",
         element: <PropertyDetails />,
+      },
+      {
+        path: "/allProperties",
+        element: <AllProperties />,
+      },
+      {
+        path: "/signIn",
+        element: <SignIn />,
       },
     ],
   },

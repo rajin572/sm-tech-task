@@ -100,9 +100,11 @@ const Navbar = () => {
               <li className="cursor-pointer text-sm group relative px-2 md:text-[18px] ">
                 Manage Rentals
               </li>
-              <li className="cursor-pointer text-sm font-semibold group relative px-2 md:text-[18px] ">
-                Sign In
-              </li>
+              <Link to="/signIn">
+                <li className="cursor-pointer text-sm font-semibold group relative px-2 md:text-[18px] ">
+                  Sign In
+                </li>
+              </Link>
             </ul>
           </div>
         </header>
